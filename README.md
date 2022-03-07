@@ -1,0 +1,2 @@
+# tyszkaz
+dodane readme
