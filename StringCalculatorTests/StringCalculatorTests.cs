@@ -78,14 +78,5 @@ namespace StringCalculatorTests
             int res = StringCalculator.StringCalculator.CalculateString(s);
             Assert.Equal(expected, res);
         }
-
-        [Theory]
-        [InlineData("//[#:@]\n25#1:1@1001", 27)]
-        [InlineData("//$\n10,0\n10,1000", 1020)]
-        public void AtTheBeginningWeCanDefineMultipleAdditionalSeparators(string s, int expected)
-        {
-            int res = StringCalculator.StringCalculator.CalculateString(s);
-            Assert.Equal(expected, res);
-        }
     }
 }
